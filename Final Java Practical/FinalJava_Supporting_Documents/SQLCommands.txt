@@ -1,0 +1,31 @@
+USE Assessment;
+
+DROP DATABASE IF EXISTS Assessment;
+
+CREATE DATABASE Assessment;
+
+CREATE TABLE idname(
+ID INTEGER NOT NULL AUTO_INCREMENT,
+Name VARCHAR(32),
+PRIMARY KEY(ID));
+
+SELECT * FROM idname;
+
+INSERT INTO idname
+(Name)
+VALUES
+("Robert"),
+("Ryan"),
+("Jessica"),
+("Sue"),
+("Nika"),
+("Ned"),
+("Susan"),
+("Karen"),
+("Bert"),
+("Bob");
+
+// 5 is the user input in this instance
+
+SELECT * FROM idname
+WHERE ID = '5';
